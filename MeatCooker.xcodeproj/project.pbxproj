@@ -13,18 +13,44 @@
 		D87E26041B94E0000029909C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87E26021B94DFFF0029909C /* Main.storyboard */; };
 		D87E26061B94E0000029909C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87E26051B94E0000029909C /* Images.xcassets */; };
 		D87E26091B94E0000029909C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87E26071B94E0000029909C /* LaunchScreen.xib */; };
-		D87E26151B94E0000029909C /* MeatCookerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D87E26141B94E0000029909C /* MeatCookerTests.m */; };
+		D87E26281B94E01F0029909C /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87E26271B94E01F0029909C /* InterfaceController.m */; };
+		D87E262A1B94E01F0029909C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87E26291B94E01F0029909C /* Images.xcassets */; };
+		D87E262E1B94E01F0029909C /* MeatCooker WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = D87E262D1B94E01F0029909C /* MeatCooker WatchKit App.app */; };
+		D87E26361B94E01F0029909C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87E26341B94E01F0029909C /* Interface.storyboard */; };
+		D87E26381B94E01F0029909C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87E26371B94E01F0029909C /* Images.xcassets */; };
+		D87E263B1B94E01F0029909C /* MeatCooker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D87E26221B94E01F0029909C /* MeatCooker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D87E260F1B94E0000029909C /* PBXContainerItemProxy */ = {
+		D87E262F1B94E01F0029909C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D87E25ED1B94DFFE0029909C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D87E25F41B94DFFE0029909C;
-			remoteInfo = MeatCooker;
+			remoteGlobalIDString = D87E262C1B94E01F0029909C;
+			remoteInfo = "MeatCooker WatchKit App";
+		};
+		D87E26391B94E01F0029909C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87E25ED1B94DFFE0029909C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87E26211B94E01F0029909C;
+			remoteInfo = "MeatCooker WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D87E26421B94E01F0029909C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D87E263B1B94E01F0029909C /* MeatCooker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D87E25F51B94DFFE0029909C /* MeatCooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeatCooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,9 +63,15 @@
 		D87E26031B94DFFF0029909C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D87E26051B94E0000029909C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D87E26081B94E0000029909C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D87E260E1B94E0000029909C /* MeatCookerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeatCookerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87E26131B94E0000029909C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D87E26141B94E0000029909C /* MeatCookerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeatCookerTests.m; sourceTree = "<group>"; };
+		D87E26221B94E01F0029909C /* MeatCooker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MeatCooker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87E26251B94E01F0029909C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87E26261B94E01F0029909C /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		D87E26271B94E01F0029909C /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		D87E26291B94E01F0029909C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D87E262D1B94E01F0029909C /* MeatCooker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeatCooker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87E26331B94E01F0029909C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87E26351B94E01F0029909C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D87E26371B94E01F0029909C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +82,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D87E260B1B94E0000029909C /* Frameworks */ = {
+		D87E261F1B94E01F0029909C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				D87E25F71B94DFFE0029909C /* MeatCooker */,
-				D87E26111B94E0000029909C /* MeatCookerTests */,
+				D87E26231B94E01F0029909C /* MeatCooker WatchKit Extension */,
+				D87E26311B94E01F0029909C /* MeatCooker WatchKit App */,
 				D87E25F61B94DFFE0029909C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				D87E25F51B94DFFE0029909C /* MeatCooker.app */,
-				D87E260E1B94E0000029909C /* MeatCookerTests.xctest */,
+				D87E26221B94E01F0029909C /* MeatCooker WatchKit Extension.appex */,
+				D87E262D1B94E01F0029909C /* MeatCooker WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,19 +136,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D87E26111B94E0000029909C /* MeatCookerTests */ = {
+		D87E26231B94E01F0029909C /* MeatCooker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D87E26141B94E0000029909C /* MeatCookerTests.m */,
-				D87E26121B94E0000029909C /* Supporting Files */,
+				D87E26261B94E01F0029909C /* InterfaceController.h */,
+				D87E26271B94E01F0029909C /* InterfaceController.m */,
+				D87E26291B94E01F0029909C /* Images.xcassets */,
+				D87E26241B94E01F0029909C /* Supporting Files */,
 			);
-			path = MeatCookerTests;
+			path = "MeatCooker WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		D87E26121B94E0000029909C /* Supporting Files */ = {
+		D87E26241B94E01F0029909C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D87E26131B94E0000029909C /* Info.plist */,
+				D87E26251B94E01F0029909C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D87E26311B94E01F0029909C /* MeatCooker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D87E26341B94E01F0029909C /* Interface.storyboard */,
+				D87E26371B94E01F0029909C /* Images.xcassets */,
+				D87E26321B94E01F0029909C /* Supporting Files */,
+			);
+			path = "MeatCooker WatchKit App";
+			sourceTree = "<group>";
+		};
+		D87E26321B94E01F0029909C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D87E26331B94E01F0029909C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,33 +183,50 @@
 				D87E25F11B94DFFE0029909C /* Sources */,
 				D87E25F21B94DFFE0029909C /* Frameworks */,
 				D87E25F31B94DFFE0029909C /* Resources */,
+				D87E26421B94E01F0029909C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D87E263A1B94E01F0029909C /* PBXTargetDependency */,
 			);
 			name = MeatCooker;
 			productName = MeatCooker;
 			productReference = D87E25F51B94DFFE0029909C /* MeatCooker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D87E260D1B94E0000029909C /* MeatCookerTests */ = {
+		D87E26211B94E01F0029909C /* MeatCooker WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D87E261B1B94E0000029909C /* Build configuration list for PBXNativeTarget "MeatCookerTests" */;
+			buildConfigurationList = D87E263F1B94E01F0029909C /* Build configuration list for PBXNativeTarget "MeatCooker WatchKit Extension" */;
 			buildPhases = (
-				D87E260A1B94E0000029909C /* Sources */,
-				D87E260B1B94E0000029909C /* Frameworks */,
-				D87E260C1B94E0000029909C /* Resources */,
+				D87E261E1B94E01F0029909C /* Sources */,
+				D87E261F1B94E01F0029909C /* Frameworks */,
+				D87E26201B94E01F0029909C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D87E26101B94E0000029909C /* PBXTargetDependency */,
+				D87E26301B94E01F0029909C /* PBXTargetDependency */,
 			);
-			name = MeatCookerTests;
-			productName = MeatCookerTests;
-			productReference = D87E260E1B94E0000029909C /* MeatCookerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "MeatCooker WatchKit Extension";
+			productName = "MeatCooker WatchKit Extension";
+			productReference = D87E26221B94E01F0029909C /* MeatCooker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D87E262C1B94E01F0029909C /* MeatCooker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87E263C1B94E01F0029909C /* Build configuration list for PBXNativeTarget "MeatCooker WatchKit App" */;
+			buildPhases = (
+				D87E262B1B94E01F0029909C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MeatCooker WatchKit App";
+			productName = "MeatCooker WatchKit App";
+			productReference = D87E262D1B94E01F0029909C /* MeatCooker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
 		};
 /* End PBXNativeTarget section */
 
@@ -169,9 +240,11 @@
 					D87E25F41B94DFFE0029909C = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					D87E260D1B94E0000029909C = {
+					D87E26211B94E01F0029909C = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = D87E25F41B94DFFE0029909C;
+					};
+					D87E262C1B94E01F0029909C = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -189,7 +262,8 @@
 			projectRoot = "";
 			targets = (
 				D87E25F41B94DFFE0029909C /* MeatCooker */,
-				D87E260D1B94E0000029909C /* MeatCookerTests */,
+				D87E26211B94E01F0029909C /* MeatCooker WatchKit Extension */,
+				D87E262C1B94E01F0029909C /* MeatCooker WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,10 +279,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D87E260C1B94E0000029909C /* Resources */ = {
+		D87E26201B94E01F0029909C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87E262E1B94E01F0029909C /* MeatCooker WatchKit App.app in Resources */,
+				D87E262A1B94E01F0029909C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87E262B1B94E01F0029909C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87E26361B94E01F0029909C /* Interface.storyboard in Resources */,
+				D87E26381B94E01F0029909C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,21 +310,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D87E260A1B94E0000029909C /* Sources */ = {
+		D87E261E1B94E01F0029909C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87E26151B94E0000029909C /* MeatCookerTests.m in Sources */,
+				D87E26281B94E01F0029909C /* InterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D87E26101B94E0000029909C /* PBXTargetDependency */ = {
+		D87E26301B94E01F0029909C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D87E25F41B94DFFE0029909C /* MeatCooker */;
-			targetProxy = D87E260F1B94E0000029909C /* PBXContainerItemProxy */;
+			target = D87E262C1B94E01F0029909C /* MeatCooker WatchKit App */;
+			targetProxy = D87E262F1B94E01F0029909C /* PBXContainerItemProxy */;
+		};
+		D87E263A1B94E01F0029909C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87E26211B94E01F0029909C /* MeatCooker WatchKit Extension */;
+			targetProxy = D87E26391B94E01F0029909C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +348,14 @@
 				D87E26081B94E0000029909C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D87E26341B94E01F0029909C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87E26351B94E01F0029909C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -365,37 +463,59 @@
 			};
 			name = Release;
 		};
-		D87E261C1B94E0000029909C /* Debug */ = {
+		D87E263D1B94E01F0029909C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MeatCookerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IBSC_MODULE = MeatCooker_WatchKit_Extension;
+				INFOPLIST_FILE = "MeatCooker WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeatCooker.app/MeatCooker";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
 			};
 			name = Debug;
 		};
-		D87E261D1B94E0000029909C /* Release */ = {
+		D87E263E1B94E01F0029909C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = MeatCooker_WatchKit_Extension;
+				INFOPLIST_FILE = "MeatCooker WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		D87E26401B94E01F0029909C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MeatCookerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeatCooker.app/MeatCooker";
+				INFOPLIST_FILE = "MeatCooker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D87E26411B94E01F0029909C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MeatCooker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -419,11 +539,19 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		D87E261B1B94E0000029909C /* Build configuration list for PBXNativeTarget "MeatCookerTests" */ = {
+		D87E263C1B94E01F0029909C /* Build configuration list for PBXNativeTarget "MeatCooker WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D87E261C1B94E0000029909C /* Debug */,
-				D87E261D1B94E0000029909C /* Release */,
+				D87E263D1B94E01F0029909C /* Debug */,
+				D87E263E1B94E01F0029909C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D87E263F1B94E01F0029909C /* Build configuration list for PBXNativeTarget "MeatCooker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87E26401B94E01F0029909C /* Debug */,
+				D87E26411B94E01F0029909C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

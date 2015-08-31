@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0u2-8o-5wh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--MeatCook-->
+        <scene sceneID="M8y-jh-0pe">
+            <objects>
+                <controller identifier="InitialController" title="MeatCook" id="0u2-8o-5wh" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="pqA-fn-qbp">
+                            <items>
+                                <timer alignment="center" textAlignment="center" id="1Ow-lU-u0x">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                                <button width="1" alignment="left" title="Start Timer" id="oGC-uE-W64">
+                                    <connections>
+                                        <action selector="onTimerButton" destination="0u2-8o-5wh" id="Mrd-ID-GeE"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="timer" destination="1Ow-lU-u0x" id="9OO-Yn-Yzv"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
