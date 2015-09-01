@@ -9,6 +9,14 @@
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, MeatTemperature) {
+    Rare = 0,
+    MediumRare = 1,
+    Medium = 2,
+    WellDone = 3
+};
+
 @interface InterfaceController : WKInterfaceController
+
 
 @end
